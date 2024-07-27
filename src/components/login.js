@@ -2,7 +2,7 @@
 import React, { useState } from 'react';
 import axios from 'axios';
 import { useHistory } from 'react-router-dom';
-import Login from '.scr/components/Login';
+import Login from '.components/Login';
 import React from 'react';
 
 
