@@ -2,6 +2,9 @@
 import React, { useState } from 'react';
 import axios from 'axios';
 import { useHistory } from 'react-router-dom';
+import Login from '.scr/components/Login';
+import React from 'react';
+
 
 function Login() {
   const [email, setEmail] = useState('');
@@ -20,6 +23,7 @@ function Login() {
   };
 
   return (
+    
     <form onSubmit={handleSubmit}>
       <div>
         <label>Email:</label>
@@ -29,6 +33,7 @@ function Login() {
         <label>Password:</label>
         <input type="password" value={password} onChange={(e) => setPassword(e.target.value)} required />
       </div>
+      
       <button type="submit">Login</button>
     </form>
   );
